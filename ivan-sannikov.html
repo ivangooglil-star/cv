@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Иван Санников — контент-стратег и редактор</title>
+<style>
+  :root {
+    --ink: #111111;
+    --paper: #ffffff;
+    --mute: #666666;
+  }
+
+  * { box-sizing: border-box; }
+
+  html { -webkit-text-size-adjust: 100%; }
+
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    line-height: 1.55;
+    font-size: 17px;
+  }
+
+  main {
+    max-width: 680px;
+    margin: 0 auto;
+    padding: clamp(28px, 7vw, 72px) clamp(20px, 6vw, 28px) 80px;
+  }
+
+  /* ---- headline block ---- */
+
+  .header-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: clamp(12px, 4vw, 24px);
+    margin-bottom: 20px;
+  }
+
+  h1.name {
+    font-size: clamp(2.6rem, 11vw, 4.6rem);
+    font-weight: 900;
+    line-height: 0.92;
+    letter-spacing: -0.02em;
+    margin: 0;
+    text-transform: uppercase;
+  }
+
+  .portrait {
+    flex-shrink: 0;
+    width: clamp(56px, 16vw, 120px);
+    height: clamp(56px, 16vw, 120px);
+    object-fit: cover;
+  }
+
+  .lede {
+    font-size: clamp(1.05rem, 2.6vw, 1.25rem);
+    max-width: 58ch;
+    margin: 0 0 18px;
+  }
+
+  .meta-line {
+    font-family: ui-monospace, "SF Mono", "Menlo", "Consolas", monospace;
+    font-size: 0.9rem;
+    color: var(--mute);
+    margin: 0 0 6px;
+  }
+
+  .portfolio-link {
+    display: inline-block;
+    margin-top: 24px;
+    font-weight: 700;
+    font-size: 1.05rem;
+  }
+
+  /* ---- links ---- */
+
+  a {
+    color: var(--ink);
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 3px;
+  }
+
+  a:hover,
+  a:focus-visible {
+    background: var(--ink);
+    color: var(--paper);
+    text-decoration: none;
+  }
+
+  /* ---- section scaffolding ---- */
+
+  section {
+    margin-top: 80px;
+  }
+
+  .section-label {
+    font-family: ui-monospace, "SF Mono", "Menlo", "Consolas", monospace;
+    font-size: 0.8rem;
+    letter-spacing: 0.08em;
+    color: var(--mute);
+    margin: 0 0 10px;
+  }
+
+  h2 {
+    font-size: clamp(1.6rem, 5vw, 2.2rem);
+    font-weight: 900;
+    letter-spacing: -0.01em;
+    margin: 0 0 28px;
+  }
+
+  /* ---- lists ---- */
+
+  ul.plain {
+    list-style: none;
+    margin: 0 0 18px;
+    padding: 0;
+  }
+
+  ul.plain li {
+    position: relative;
+    padding-left: 1.4em;
+    margin-bottom: 14px;
+  }
+
+  ul.plain li::before {
+    content: "—";
+    position: absolute;
+    left: 0;
+    font-weight: 700;
+  }
+
+  p {
+    margin: 0 0 16px;
+  }
+
+  /* ---- experience entries ---- */
+
+  .job {
+    margin-bottom: 48px;
+  }
+
+  .job:last-child {
+    margin-bottom: 0;
+  }
+
+  .job h3 {
+    font-size: 1.2rem;
+    font-weight: 800;
+    margin: 0 0 4px;
+  }
+
+  .job .dates {
+    font-family: ui-monospace, "SF Mono", "Menlo", "Consolas", monospace;
+    font-size: 0.85rem;
+    color: var(--mute);
+    margin: 0 0 14px;
+  }
+
+  .job p,
+  .job ul {
+    max-width: 62ch;
+  }
+
+  @media (max-width: 420px) {
+    body { font-size: 16px; }
+    h1.name { font-size: 2.3rem; }
+  }
+</style>
+</head>
+<body>
+<main>
+
+  <div class="header-row">
+    <h1 class="name">Иван Санников</h1>
+    <img class="portrait" src="portrait-animation.gif" alt="Иван Санников">
+  </div>
+
+  <p class="lede">Контент-стратег и редактор с бэкграундом в SMM и креативе. Пишу текст, придумываю концепции, слежу за голосом бренда и тем, что волнует людей.</p>
+
+  <p class="lede">Хочу делать продукты ближе к людям и настоящей жизни, ищу работу в редакции или маркетинге большого сервиса.</p>
+
+  <p class="meta-line">Работаю удалённо из Красноярска, +4 часа к Москве</p>
+
+  <a class="portfolio-link" href="https://www.figma.com/design/gf0gK0s7qmfxEe9Oy3r7Hj/Портфолио--Санников-🚤?node-id=0-1&amp;t=jkt8cS4pqSkS4CeB-1" target="_blank" rel="noopener">Портфолио в Figma →</a>
+
+  <section>
+    <p class="section-label">01</p>
+    <h2>сейчас</h2>
+    <ul class="plain">
+      <li>Работаю в Mail, пишу промо, пуши, письма + спецпроекты — от идеи до прода</li>
+      <li>Настраиваю процессы, делаю исследования, помогаю коллегам</li>
+    </ul>
+  </section>
+
+  <section>
+    <p class="section-label">02</p>
+    <h2>что оставляю после себя в Mail</h2>
+    <ul class="plain">
+      <li>Голос бренда в виде плагина в Figma с удачными примерами и гайдами. Пополняется ai-агентом и помогает редактору писать, когда тот работает над макетом, а не лежит мёртвой пдфкой</li>
+      <li>Чатик трендвочинга — находил и переводил тренд-репорты, проводил встречи с маркетологами, дизайнерами и редакторами. Расширяли кругозор и находили идеи для спецпроектов</li>
+      <li>Скил для ресайза текста на несколько форматов — агент с ним может зайти в Figma и растащить текст на много разных баннеров и модалок</li>
+      <li>Культуру тестирования директ-коммуникаций. Проводил и презентовал тесты пушей и тем. Ввёл курс на то, что каждый запуск — это исследование</li>
+    </ul>
+  </section>
+
+  <section>
+    <p class="section-label">03</p>
+    <h2>Опыт работы</h2>
+
+    <div class="job">
+      <h3>Mail, креативный редактор</h3>
+      <p class="dates">С февраля 2024 (2 года и 10 месяцев)</p>
+      <p>Коммуникации Почты, Облака, подписки Mail Space. Пишу лендинги, письма, пуши, баннеры. Делаем спецы в креативной команде. Сделал голос бренда с коммуникационными принципами Mail, помогаю выстраивать единый язык продукта.</p>
+    </div>
+
+    <div class="job">
+      <h3>ЮMoney — креативный редактор</h3>
+      <p class="dates">2021 — 2024 (2 года и 8 месяцев)</p>
+      <p>Писал сначала для b2b, потом для b2c: лендинги, письма, презентации, баннеры и пуши. Иногда подхватывал продуктовые тексты и внутренние коммуникации.</p>
+      <ul class="plain">
+        <li>Сделал библиотеку повторяющихся продуктовых формулировок</li>
+        <li>Вместе с дизайнером переделал шаблоны писем</li>
+        <li>Написал гайд по неймингу продуктов и сервисов</li>
+        <li>Лидировал брейнштормы</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <h3>Институт гастрономии — копирайтер, SMM, маркетолог</h3>
+      <p class="dates">2020 — 2021 (1 год и 3 месяца)</p>
+      <ul class="plain">
+        <li>Вёл аккаунты в соцсетях, делал короткие видео и тейковеры вместе со студентами</li>
+        <li>Отвечал за тексты и рекламу: презентации, сценарии роликов, лендинги</li>
+        <li>Ставил задачи дизайнерам, видеографу и студентам-помощникам</li>
+        <li>Придумывал и настраивал рекламные кампании</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <h3>Вираж — SMM</h3>
+      <p class="dates">2019 — 2020 (10 месяцев)</p>
+      <p>Вёл соцсети хозяйственных магазинов. Снимал обзоры инструментов с мастерами, придумывал спецпроекты и форматы вроде битв снегоуборочной техники, работал с подрядчиками по видео.</p>
+    </div>
+
+    <div class="job">
+      <h3>До 2019</h3>
+      <p>Фриланс в SMM и копирайтинге, местное рекламное агентство, письма для обувных магазинов, сценарии корпоративных фильмов.</p>
+    </div>
+  </section>
+
+  <section>
+    <p class="section-label">04</p>
+    <h2>Фоном</h2>
+    <p>Соорганизовывал сообщества, сайт-специфик выставки и ярмарки художников, писал текстовые квесты, один раз очень сильно упал на велосипеде.</p>
+    <p>Веду канал про то, что не работает: <a href="https://t.me/etonerabotaet" target="_blank" rel="noopener">t.me/etonerabotaet</a>, про смешную брендовую паль: <a href="https://t.me/NORSEFASH" target="_blank" rel="noopener">t.me/NORSEFASH</a>, про Дарксоулс в настоящей жизни: <a href="https://t.me/darksoulsirl" target="_blank" rel="noopener">t.me/darksoulsirl</a>, подумываю реанимировать канал с плохими 3Д-сканами машинок: <a href="https://t.me/tachq" target="_blank" rel="noopener">t.me/tachq</a></p>
+  </section>
+
+</main>
+</body>
+</html>
